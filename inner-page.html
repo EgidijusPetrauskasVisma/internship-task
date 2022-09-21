@@ -4,23 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Category</title>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <img class="logo" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png" alt="logo.png">
+        <div class="header-container container">
+            <img class="logo" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png" alt="logo">
             <nav>
-                <a href="/index.html" class="main-menu-button custom-button">Main Menu</a>
-                <a class="search custom-button">Search</a>
-                <a class="login custom-button">Login</a>
+                <a href="/index.html" class="nav-link button">Main Menu</a>
+                <button class="nav-link button">Login</button>
+                <button class="nav-link button">Search</button>
             </nav>
         </div>
     </header>
@@ -29,58 +23,61 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque quod atque voluptate a, id eum adipisci odio nobis expedita!</p>
         </section>
         <section class="items-section">
-            <h2>Cars</h2>
-            <select name="filter" id="filter">
-                <option value="#" disabled selected>Filter by...</option>
-                <option value="rear-drive">Rear drive</option>
-                <option value="front-drive">Front drive</option>
-            </select>
-            <div class="items-container">
+            <h1>Cars</h1>
+            <form id="filter-form">
+                <label for="filter" id="filter-label">Detailed search</label>
+                <select name="filter" id="filter">
+                    <option value="#" disabled selected>Filter by...</option>
+                    <option value="rear-drive">Rear drive</option>
+                    <option value="front-drive">Front drive</option>
+                </select>
+            </form>
+            <div class="items-container container">
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
                 <article class="item">
-                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png">
+                    <img src="https://www.pngplay.com/wp-content/uploads/9/Luxury-Car-PNG-Background.png" alt="lamboIMG">
                     <p>Lamborgini 2016</p>
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer-container">
+        <div class="footer-container container">
             <p class="copyright">
                     Copyright © Visma 2022
             </p>
             <article class="social">
-                <a href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png">
+                <a class="social-icon" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="instagram.logo">
                 </a>
-                <a href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png">
+                <a class="social-icon" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="facebook.logo">
                 </a>
-                <a href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png">
+                <a class="social-icon" href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="twitter.logo">
                 </a>
             </article>
         </div>
