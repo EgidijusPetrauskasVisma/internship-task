@@ -1,0 +1,27 @@
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-2);
+    padding: var(--size-4);
+    text-align: center;
+    background-color: var(--primary-dark);
+    color: var(--white-main);
+}
+
+.info-section h1 {
+    font-size: var(--font-size-large);
+}
+
+.info-section p {
+    font-size: var(--font-size-small);
+    max-width: 500px;
+}
+
+/* Mobile */
+@media (min-width: 500px) {
+    .info-section h1 {
+        font-size: var(--font-size-large);
+    }
+}

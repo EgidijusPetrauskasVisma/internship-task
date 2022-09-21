@@ -1,0 +1,47 @@
+.carousel-section {
+    height: 220px;
+    padding: var(--size-3);
+    background-color: var(--primary-light);
+}
+
+.carousel-container {
+    height: 100%;
+}
+
+.carousel-display {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    background-image: url('https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1122&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.prev, .next {
+    min-width: 44px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+}
+
+/* Mobile */
+@media (min-width: 500px) {
+    .carousel-section {
+        height: 320px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .carousel-section {
+        height: 400px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1366px) {
+    .carousel-section {
+        height: 500px;
+    }
+}
