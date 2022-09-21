@@ -40,3 +40,24 @@
 .item p {
     font-size: var(--font-size-extra-small);
 }
+
+/* Mobile */
+@media (min-width: 500px) {
+    .items-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .items-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1366px) {
+    .items-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

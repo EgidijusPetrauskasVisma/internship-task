@@ -18,3 +18,10 @@
     font-size: var(--font-size-small);
     max-width: 500px;
 }
+
+/* Mobile */
+@media (min-width: 500px) {
+    .info-section h1 {
+        font-size: var(--font-size-large);
+    }
+}

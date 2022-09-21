@@ -18,3 +18,17 @@
     border: 1px solid var(--primary-main);
     border-radius: var(--size-1);
 }
+
+/* Mobile */
+@media (min-width: 500px) {
+    .categories-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .categories-section {
+        grid-template-columns: repeat(4, minmax(auto, 300px));
+    }
+}

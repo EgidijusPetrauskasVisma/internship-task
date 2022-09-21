@@ -24,3 +24,24 @@
     border: none;
     font-size: 2.5rem;
 }
+
+/* Mobile */
+@media (min-width: 500px) {
+    .carousel-section {
+        height: 320px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .carousel-section {
+        height: 400px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1366px) {
+    .carousel-section {
+        height: 500px;
+    }
+}
