@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="script.js" defer></script>
     <title>E-shop</title>
 </head>
+
 <body>
     <header class="header">
         <div class="header-container container flex-between">
-            <img class="logo" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png" alt="logo">
+            <img class="logo"
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png"
+                alt="logo of the site">
             <nav class="nav">
                 <a href="/index.html" class="nav-link button">Main Menu</a>
                 <button class="nav-link button">Search</button>
@@ -21,19 +26,63 @@
             </nav>
         </div>
     </header>
-    
+
     <main>
         <section class="info-section">
             <h1>Welcome to eshop!</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum architecto doloremque tenetur nobis quam tempora quisquam veniam, non a magni.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum architecto doloremque tenetur nobis quam
+                tempora quisquam veniam, non a magni.</p>
         </section>
-        <section class="carousel-section">
-            <div class="carousel-container container flex-between">
-                <button class="prev">←</button>
-                <article class="carousel-display"></article>
-                <button class="next">→</button>
+        <section class="carousel container">
+            <button onclick="changeSlide('prev')" class="prev">←</button>
+            <div class="slide-display-container">
+                <ul class="slides-container">
+                    <li class="slide">
+                        <a target="_blank" href="https://github.com/EgidijusPetrauskasVisma/internship-task"></a>
+                        <img src="https://placeimg.com/640/480/any?n=1" alt="slide">
+                        <div class="slide-text-container">
+                            <h2>Title of this item</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, distinctio?</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a target="_blank" href="https://github.com/EgidijusPetrauskasVisma/internship-task"></a>
+                        <img src="https://placeimg.com/640/480/any?n=2" alt="slide">
+                        <div class="slide-text-container">
+                            <h2>Title of this item</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, distinctio?</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a target="_blank" href="https://github.com/EgidijusPetrauskasVisma/internship-task"></a>
+                        <img src="https://placeimg.com/640/480/any?n=3" alt="slide">
+                        <div class="slide-text-container">
+                            <h2>Title of this item</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, distinctio?</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a target="_blank" href="https://github.com/EgidijusPetrauskasVisma/internship-task"></a>
+                        <img src="https://placeimg.com/640/480/any?n=4" alt="slide">
+                        <div class="slide-text-container">
+                            <h2>Title of this item</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, distinctio?</p>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <a target="_blank" href="https://github.com/EgidijusPetrauskasVisma/internship-task"></a>
+                        <img src="https://placeimg.com/640/480/any?n=5" alt="slide">
+                        <div class="slide-text-container">
+                            <h2>Title of this item</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, distinctio?</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="slides-counter"></p>
             </div>
+            <button onclick="changeSlide('next')" class="next">→</button>
         </section>
+
         <section class="categories-section">
             <a href="/inner-page.html" class="category">
                 Cars
@@ -68,16 +117,20 @@
             </p>
             <article class="social">
                 <a class="social-icon" href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="instagram.logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                        alt="instagram.logo">
                 </a>
                 <a class="social-icon" href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="facebook.logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+                        alt="facebook.logo">
                 </a>
                 <a class="social-icon" href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" alt="twitter.logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
+                        alt="twitter.logo">
                 </a>
             </article>
         </div>
     </footer>
 </body>
+
 </html>
