@@ -49,18 +49,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.6;
-    z-index: 2;
-    transition: opacity var(--transition-duration);
-}
-
-.slide a:hover {
-    opacity: 0.3;
-}
-
-.slide a:hover+.slide-text-container {
-    color: red;
 }
 
 .slide img {
@@ -71,17 +59,23 @@
 
 .slide-text-container {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 0;
     left: 0;
-    padding: 0 50px;
+    padding: 4rem 50px;
     text-align: center;
-    color: white;
-    z-index: 2;
+    color: var(--white-main);
     opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color var(--transition-duration);
+}
+
+.slide:hover .slide-text-container {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slide-text-container p {
