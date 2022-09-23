@@ -18,7 +18,7 @@
 
 #filter {
     width: 100%;
-    height: 1.5rem;
+    height: var(--size-4);
     margin-top: var(--size-1);
 }
 
@@ -26,11 +26,20 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: var(--size-4) 0;
+    padding: 0 20px;
+    gap: var(--size-4);
 }
 
 .item {
     max-width: 350px;
+    position: relative;
     text-align: center;
+    transition: transform var(--transition-duration);
+}
+
+.item:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .item img {

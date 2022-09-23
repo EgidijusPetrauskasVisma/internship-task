@@ -1,22 +1,22 @@
 :root {
     /* Colors */
     --primary-main: #0067fc;
-    --primary-light: #f0f8ff;
+    --primary-light: #dde8f1;
     --primary-dark: #0048cd;
     --white-main: #fff;
 
     /* Font sizes */
     --font-size-extra-small: 0.75rem;
-    --font-size-small: 0.875rem; 
-    --font-size-medium: 1rem; 
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
     --font-size-large: 1.5rem;
 
     /* Sizes */
     --size-1: 0.25rem;
-    --size-2: 0.5rem; 
-    --size-3: 1rem; 
-    --size-4: 2rem; 
-    
+    --size-2: 0.5rem;
+    --size-3: 1rem;
+    --size-4: 2rem;
+
     /* Animation */
     --transition-duration: 0.3s;
 }
