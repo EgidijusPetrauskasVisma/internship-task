@@ -3,7 +3,7 @@
     height: 65px;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 2;
     background-color: var(--white-main);
 }
 
@@ -28,7 +28,7 @@
 
 .footer {
     background-color: var(--primary-light);
-    padding: var(--size-3) 20px;
+    padding: var(--size-3) var(--size-3);
 }
 
 .footer-container {

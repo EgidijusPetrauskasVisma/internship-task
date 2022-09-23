@@ -1,24 +1,26 @@
-const carousel = document.querySelector('.carousel');
-
-function changeSlide(param) {
-    const currentSlideIndex = Number(getComputedStyle(carousel).getPropertyValue('--slide-index'));
-    const totalSlidesIndex = document.querySelectorAll('.slide').length;
-
-    if (param === 'prev') {
-        if (currentSlideIndex === 0) return;
-        carousel.style.setProperty('--slide-index', currentSlideIndex - 1);
-    } else {
-        if (totalSlidesIndex === (currentSlideIndex + 1)) return;
-        carousel.style.setProperty('--slide-index', currentSlideIndex + 1);
-    }
-    updateSlidesCounter();
+const ui = {
+    carousel: document.querySelector('.carousel'),
+    slides: document.querySelectorAll('.slide'),
+    slidesCounter: document.querySelector('.slides-counter'),
+    slideIndex: 0
 }
 
-function updateSlidesCounter() {
-    const currentSlideIndex = Number(getComputedStyle(carousel).getPropertyValue('--slide-index'));
-    const totalSlidesIndex = document.querySelectorAll('.slide').length;
-    const slidesCounter = document.querySelector('.slides-counter');
-    slidesCounter.innerText = `${currentSlideIndex + 1}/${totalSlidesIndex}`
+function prevSlide() {
+    if (ui.slideIndex === 0) return;
+    ui.slideIndex--;
+    ui.carousel.style.setProperty('--slide-index', ui.slideIndex);
+    updateCounter();
 }
 
-updateSlidesCounter();
+function nextSlide() {
+    if (ui.slides.length === (ui.slideIndex + 1)) return;
+    ui.slideIndex++;
+    ui.carousel.style.setProperty('--slide-index', ui.slideIndex);
+    updateCounter();
+}
+
+function updateCounter() {
+    ui.slidesCounter.innerText = `${ui.slideIndex + 1}/${ui.slides.length}`
+}
+
+updateCounter();
