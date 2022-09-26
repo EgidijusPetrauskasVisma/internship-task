@@ -1,0 +1,90 @@
+{
+    "categories": [
+        {
+            "id": "cat1",
+            "title": "cars"
+        },
+        {
+            "id": "cat2",
+            "title": "motorcycles"
+        },
+        {
+            "id": "cat3",
+            "title": "bikes"
+        },
+        {
+            "id": "cat4",
+            "title": "planes"
+        },
+        {
+            "id": "cat5",
+            "title": "boats"
+        }
+    ],
+    "items": [
+        {
+            "id": "1",
+            "title": "Category 1 Item",
+            "img": "https://placeimg.com/640/480/any?n=1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat1",
+            "flag": 0
+        },
+        {
+            "id": "2",
+            "title": "Category 1 Item",
+            "img": "https://placeimg.com/640/480/any?n=2",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat1",
+            "flag": 1
+        },
+        {
+            "id": "3",
+            "title": "Category 2 Item",
+            "img": "https://placeimg.com/640/480/any?n=3",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat2",
+            "flag": 0
+        },
+        {
+            "id": "4",
+            "title": "Category 3 Item",
+            "img": "https://placeimg.com/640/480/any?n=4",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat3",
+            "flag": 0
+        },
+        {
+            "id": "5",
+            "title": "Category 3 Item",
+            "img": "https://placeimg.com/640/480/any?n=5",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat3",
+            "flag": 1
+        },
+        {
+            "id": "6",
+            "title": "Category 5 Item",
+            "img": "https://placeimg.com/640/480/any?n=6",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat5",
+            "flag": 0
+        },
+        {
+            "id": "7",
+            "title": "Category 5 Item",
+            "img": "https://placeimg.com/640/480/any?n=7",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat5",
+            "flag": 1
+        },
+        {
+            "id": "8",
+            "title": "Category 2 Item",
+            "img": "https://placeimg.com/640/480/any?n=8",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
+            "categoryId": "cat2",
+            "flag": 1
+        }
+    ]
+}
