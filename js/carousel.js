@@ -1,4 +1,4 @@
-import { fetchData } from "./api.js";
+import { fetchCarouselProducts } from "./api.js";
 
 const ui = {
     carousel: document.querySelector('.carousel'),
@@ -28,7 +28,7 @@ function updateCounter() {
 }
 
 const appendCarouselSlides = async () => {
-    const carouselSlides = await fetchData('items?flag=1');
+    const carouselSlides = await fetchCarouselProducts();
     carouselSlides.forEach(slide => {
         const newSlide = buildNewSlide(slide);
         ui.slidesContainer.appendChild(newSlide);

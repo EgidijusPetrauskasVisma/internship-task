@@ -1,4 +1,4 @@
-import { fetchData } from "./api.js";
+import { fetchFeaturedProducts } from "./api.js";
 
 const ui = {
     itemsContainer: document.querySelector('.items-container')
@@ -16,7 +16,7 @@ const appendItems = async () => {
 
 async function fetchItems() {
     const category = new URLSearchParams(window.location.search).get('category');
-    const items = await fetchData(`items?categoryId=${category}`);
+    const items = await fetchFeaturedProducts(category);
     return items;
 }
 
