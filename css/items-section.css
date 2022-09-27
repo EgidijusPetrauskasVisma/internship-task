@@ -50,6 +50,11 @@
     font-size: var(--font-size-extra-small);
 }
 
+.empty-container-text {
+    display: block;
+    text-align: center;
+}
+
 /* Mobile */
 @media (min-width: 500px) {
     .items-container {

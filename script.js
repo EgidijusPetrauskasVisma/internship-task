@@ -1,26 +1,8 @@
-const ui = {
-    carousel: document.querySelector('.carousel'),
-    slides: document.querySelectorAll('.slide'),
-    slidesCounter: document.querySelector('.slides-counter'),
-    slideIndex: 0
-}
+"use strict";
 
-function prevSlide() {
-    if (ui.slideIndex === 0) return;
-    ui.slideIndex--;
-    ui.carousel.style.setProperty('--slide-index', ui.slideIndex);
-    updateCounter();
-}
+import initCarousel from "./js/carousel.js";
+import initCategories from "./js/categories.js";
 
-function nextSlide() {
-    if (ui.slides.length === (ui.slideIndex + 1)) return;
-    ui.slideIndex++;
-    ui.carousel.style.setProperty('--slide-index', ui.slideIndex);
-    updateCounter();
-}
 
-function updateCounter() {
-    ui.slidesCounter.innerText = `${ui.slideIndex + 1}/${ui.slides.length}`
-}
-
-updateCounter();
+initCarousel();
+initCategories();
