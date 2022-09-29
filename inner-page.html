@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="./js/inner-page.js" type="module"></script>
+    <script src="./js/items-section.js" type="module"></script>
     <title>Category</title>
 </head>
 
@@ -29,35 +29,72 @@
                 adipisci odio nobis expedita!</p>
         </section>
         <section class="items-section">
-            <h1>Category Name</h1>
-            <form id="filter-form">
-                <label for="filter" id="filter-label">Detailed search</label>
-                <select name="filter" id="filter">
-                    <option value="#" disabled selected>Filter by...</option>
-                    <option value="rear-drive">Option 1</option>
-                    <option value="front-drive">Option 2</option>
-                </select>
-            </form>
-            <div class="items-container container"></div>
+            <h1 class="title items-category-header"></h1>
+            <article class="tools-section">
+                <form id="filter-form">
+                    <label for="filter" id="filter-label">Detailed search</label>
+                    <select name="filter" id="filter">
+                        <option value="#" disabled selected>Filter by fuel...</option>
+                        <option value="petrol-filter">Petrol</option>
+                        <option value="diesel-filter">Diesel</option>
+                    </select>
+                </form>
+                <button class="button" id="add-item-btn">Add Item</button>
+            </article>
+            <article class="items-container container"></article>
+            <dialog class="item-dialog" id="item-dialog">
+                <form method="dialog" class="item-dialog-form">
+                    <h3 class="title item-dialog-header"></h3>
+
+                    <input type="hidden" name="id">
+                    <input type="hidden" name="categoryId">
+
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" required>
+
+                    <label for="description">Description</label>
+                    <input type="text" name="description" id="description">
+
+                    <label for="img">Image</label>
+                    <input type="url" name="img" id="img" required>
+
+                    <label for="price">Price</label>
+                    <input type="number" name="price" id="price" required>
+
+                    <label for="fuel">Fuel type</label>
+                    <select name="fuel" id="fuel" required>
+                        <option value="petrol" selected>Petrol</option>
+                        <option value="diesel">Diesel</option>
+                    </select>
+
+                    <label for="flag">Include in Carousel</label>
+                    <input type="checkbox" name="flag" id="flag">
+
+                    <div class="item-dialog-btn-container">
+                        <button class="button" id="item-dialog" type="submit">Submit</button>
+                        <button class="button cancel-btn" type="button">Cancel</button>
+                    </div>
+                </form>
+            </dialog>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" aria-label="Footer navigation">
         <div class="footer-container container flex-between">
             <p class="copyright">
                 Copyright © Visma 2022
             </p>
             <article class="social">
-                <a class="social-icon" href="#">
+                <a class="social-icon" href="#" aria-link="Link to instagram">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
-                        alt="instagram.logo">
+                        alt="instagram logo">
                 </a>
-                <a class="social-icon" href="#">
+                <a class="social-icon" href="#" aria-link="Link to facebook">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
-                        alt="facebook.logo">
+                        alt="facebook logo">
                 </a>
-                <a class="social-icon" href="#">
+                <a class="social-icon" href="#" aria-link="Link to twitter">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"
-                        alt="twitter.logo">
+                        alt="twitter logo">
                 </a>
             </article>
         </div>

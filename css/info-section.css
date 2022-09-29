@@ -12,6 +12,7 @@
 
 .info-section h1 {
     font-size: var(--font-size-large);
+    color: inherit;
 }
 
 .info-section p {

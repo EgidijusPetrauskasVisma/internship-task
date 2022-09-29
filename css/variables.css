@@ -4,6 +4,9 @@
     --primary-light: #dde8f1;
     --primary-dark: #0048cd;
     --white-main: #fff;
+    --white-blurred: rgba(255, 255, 255, 0.6);
+    --color-title: rgb(1, 0, 22);
+    --color-delete: rgb(184, 0, 0);
 
     /* Font sizes */
     --font-size-extra-small: 0.75rem;

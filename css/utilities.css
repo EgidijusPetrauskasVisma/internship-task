@@ -8,6 +8,17 @@
     justify-content: space-between;
 }
 
+.title {
+    font-size: var(--font-size-large);
+    color: var(--color-title);
+}
+
+.empty-container-text {
+    display: block !important;
+    padding: calc(var(--size-4) * 2) 0;
+    text-align: center;
+}
+
 .button {
     cursor: pointer;
     border: none;

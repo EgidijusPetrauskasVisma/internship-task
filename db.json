@@ -1,90 +1,65 @@
 {
-    "categories": [
-        {
-            "id": "cat1",
-            "title": "cars"
-        },
-        {
-            "id": "cat2",
-            "title": "motorcycles"
-        },
-        {
-            "id": "cat3",
-            "title": "bikes"
-        },
-        {
-            "id": "cat4",
-            "title": "planes"
-        },
-        {
-            "id": "cat5",
-            "title": "boats"
-        }
-    ],
-    "items": [
-        {
-            "id": "1",
-            "title": "Category 1 Item",
-            "img": "https://placeimg.com/640/480/any?n=1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat1",
-            "flag": 0
-        },
-        {
-            "id": "2",
-            "title": "Category 1 Item",
-            "img": "https://placeimg.com/640/480/any?n=2",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat1",
-            "flag": 1
-        },
-        {
-            "id": "3",
-            "title": "Category 2 Item",
-            "img": "https://placeimg.com/640/480/any?n=3",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat2",
-            "flag": 0
-        },
-        {
-            "id": "4",
-            "title": "Category 3 Item",
-            "img": "https://placeimg.com/640/480/any?n=4",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat3",
-            "flag": 0
-        },
-        {
-            "id": "5",
-            "title": "Category 3 Item",
-            "img": "https://placeimg.com/640/480/any?n=5",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat3",
-            "flag": 1
-        },
-        {
-            "id": "6",
-            "title": "Category 5 Item",
-            "img": "https://placeimg.com/640/480/any?n=6",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat5",
-            "flag": 0
-        },
-        {
-            "id": "7",
-            "title": "Category 5 Item",
-            "img": "https://placeimg.com/640/480/any?n=7",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat5",
-            "flag": 1
-        },
-        {
-            "id": "8",
-            "title": "Category 2 Item",
-            "img": "https://placeimg.com/640/480/any?n=8",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, eveniet?",
-            "categoryId": "cat2",
-            "flag": 1
-        }
-    ]
+  "categories": [
+    {
+      "id": "cat1",
+      "title": "cars"
+    },
+    {
+      "id": "cat2",
+      "title": "motorcycles"
+    },
+    {
+      "id": "cat3",
+      "title": "snowmobiles"
+    },
+    {
+      "id": "cat4",
+      "title": "planes"
+    },
+    {
+      "id": "cat5",
+      "title": "boats"
+    }
+  ],
+  "items": [
+    {
+      "title": "Bugatti",
+      "description": "Most powerful car",
+      "img": "https://images.unsplash.com/photo-1627454820516-dc767bcb4d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVnYXR0aXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "2000000",
+      "fuel": "petrol",
+      "flag": "on",
+      "categoryId": "cat1",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "categoryId": "cat1",
+      "title": "Ferrari",
+      "description": "",
+      "img": "https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVycmFyaXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "300000",
+      "fuel": "petrol",
+      "flag": "on"
+    },
+    {
+      "title": "SpitFire",
+      "description": "WW2 British plane",
+      "img": "https://images.unsplash.com/photo-1617397387654-db752535aad6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHNwaXRmaXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "5000000",
+      "fuel": "petrol",
+      "flag": "on",
+      "categoryId": "cat4",
+      "id": 3
+    },
+    {
+      "title": "Yamaha ",
+      "description": "",
+      "img": "https://images.unsplash.com/photo-1588925762549-c414056c4d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8eWFtYWhhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      "price": "12000",
+      "fuel": "petrol",
+      "categoryId": "cat2",
+      "id": 4
+    }
+  ]
 }

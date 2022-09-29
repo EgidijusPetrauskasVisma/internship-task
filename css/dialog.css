@@ -1,0 +1,75 @@
+.item-dialog {
+    width: 95%;
+    margin: auto auto;
+    background-color: var(--primary-light);
+    border: none;
+    padding: var(--size-4);
+}
+
+.item-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.item-dialog-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-dialog-form h3 {
+    margin: var(--size-3) 0;
+}
+
+.item-dialog-form label {
+    font-size: var(--font-size-small);
+}
+
+.item-dialog-form input {
+    padding-left: var(--size-1);
+}
+
+.item-dialog-form input,
+.item-dialog-form select {
+    width: 100%;
+    height: var(--size-4);
+    margin-top: var(--size-1);
+    margin-bottom: var(--size-4);
+    font-size: var(--font-size-small);
+}
+
+.item-dialog-form button {
+    padding: var(--size-2);
+}
+
+.item-dialog-btn-container {
+    width: 120px;
+    min-height: var(--size-4);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn {
+    background-color: var(--color-delete);
+}
+
+.cancel-btn:hover {
+    color: var(--color-delete);
+    border: 1px solid var(--color-delete);
+}
+
+.item-dialog-form input[type=checkbox] {
+    width: calc(var(--size-3) * 1.4);
+    margin-top: var(--size-1);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .item-dialog {
+        max-width: 1000px;
+    }
+
+    .item-dialog-form {
+        max-width: 50%;
+    }
+}
