@@ -11,21 +11,21 @@ export const fetchCarouselProducts = () =>
 export const deleteProduct = (id) =>
     fetch(`http://localhost:3000/items/${id}`, { method: 'DELETE' })
 
-export const createProduct = (body) =>
+export const createProduct = (formData) =>
     fetch('http://localhost:3000/items', {
         method: 'POST',
         headers: {
             'Content-Type': "application/json"
         },
-        body: JSON.stringify(Object.fromEntries(body))
+        body: JSON.stringify(Object.fromEntries(formData))
     })
 
-export const editProduct = (body, id) => {
+export const editProduct = (formData, id) => {
     fetch(`http://localhost:3000/items/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': "application/json"
         },
-        body: JSON.stringify(Object.fromEntries(body))
+        body: JSON.stringify(Object.fromEntries(formData))
     })
 }

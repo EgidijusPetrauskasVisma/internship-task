@@ -10,8 +10,8 @@ const ui = {
 }
 
 export const appendItems = async () => {
-    const items = await fetchItems();
     if (!ui.itemsContainer) return;
+    const items = await fetchItems();
     ui.itemsContainer.innerHTML = '';
     ui.itemsContainer.classList.remove('empty-container-text');
     checkIfEmpty(items);
@@ -29,9 +29,9 @@ async function fetchItems() {
 }
 
 async function updateCategoryHeader(category) {
+    if (!ui.categoryHeader) return;
     const categories = await fetchCategories();
     const currentCategory = categories.find(cat => cat.id === category);
-    if (!ui.categoryHeader) return;
     if (!currentCategory) {
         ui.categoryHeader.innerText = 'Current Category'
     } else {

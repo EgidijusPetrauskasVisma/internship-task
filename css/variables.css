@@ -1,12 +1,12 @@
 :root {
     /* Colors */
-    --primary-main: #0067fc;
-    --primary-light: #dde8f1;
-    --primary-dark: #0048cd;
-    --white-main: #fff;
-    --white-blurred: rgba(255, 255, 255, 0.6);
-    --color-title: rgb(1, 0, 22);
-    --color-delete: rgb(184, 0, 0);
+    --primary-main: hsl(215, 100%, 49%);
+    --primary-light: hsl(207, 42%, 91%);
+    --primary-dark: hsl(219, 100%, 40%);
+    --white-main: hsl(0, 0%, 100%);
+    --white-secondary: hsla(0, 0%, 100%, 0.6);
+    --color-title: hsl(243, 100%, 4%);
+    --color-delete: hsl(0, 100%, 36%);
 
     /* Font sizes */
     --font-size-extra-small: 0.75rem;

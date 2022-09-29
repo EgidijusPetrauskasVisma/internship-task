@@ -44,13 +44,13 @@ const appendCarouselSlides = async () => {
 }
 
 function checkIfEmpty(slidesArray) {
+    if (!ui.slidesContainer) return;
+    if (!ui.slidesCounter) return;
     if (slidesArray.length === 0) {
         ui.slidesContainer?.classList.add('empty-container-text');
-        if (!ui.slidesContainer) return;
         ui.slidesContainer.innerHTML = `
             <h2 class="empty-container-text">No items found</h2>
         `
-        if (!ui.slidesCounter) return;
         ui.slidesCounter.innerHTML = '';
     }
 }

@@ -1,6 +1,6 @@
 .item-dialog {
     width: 95%;
-    margin: auto auto;
+    margin: auto;
     background-color: var(--primary-light);
     border: none;
     padding: var(--size-4);
@@ -31,11 +31,15 @@
 
 .item-dialog-form input,
 .item-dialog-form select {
+    --field-font-size: var(--font-size-small);
+    --field-height: var(--size-4);
+    --field-spacing: var(--size-4);
+    --field-spacing-small: var(--size-1);
     width: 100%;
-    height: var(--size-4);
-    margin-top: var(--size-1);
-    margin-bottom: var(--size-4);
-    font-size: var(--font-size-small);
+    height: var(--field-height);
+    margin-top: var(--field-spacing-small);
+    margin-bottom: var(--field-spacing);
+    font-size: var(--field-font-size);
 }
 
 .item-dialog-form button {
@@ -43,10 +47,9 @@
 }
 
 .item-dialog-btn-container {
-    width: 120px;
     min-height: var(--size-4);
     display: flex;
-    justify-content: space-between;
+    gap: var(--size-3);
 }
 
 .cancel-btn {
@@ -59,7 +62,8 @@
 }
 
 .item-dialog-form input[type=checkbox] {
-    width: calc(var(--size-3) * 1.4);
+    --checkbox-size: calc(var(--size-3) * 1.4);
+    width: var(--checkbox-size);
     margin-top: var(--size-1);
 }
 
