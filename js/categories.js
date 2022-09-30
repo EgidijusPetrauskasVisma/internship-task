@@ -1,3 +1,4 @@
+//@ts-check
 import { fetchCategories } from "./api.js";
 
 const ui = {
@@ -8,7 +9,7 @@ const appendCategories = async () => {
     const categories = await fetchCategories();
     categories.forEach(category => {
         const newCategory = buildNewCategory(category);
-        ui.categoriesSection.appendChild(newCategory);
+        ui.categoriesSection?.appendChild(newCategory);
     })
 }
 
@@ -21,8 +22,4 @@ function buildNewCategory(category) {
     return newCategory;
 }
 
-function initCategories() {
-    appendCategories();
-}
-
-export default initCategories;
+export default appendCategories;

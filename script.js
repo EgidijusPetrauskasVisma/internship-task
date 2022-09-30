@@ -1,8 +1,8 @@
 "use strict";
 
 import initCarousel from "./js/carousel.js";
-import initCategories from "./js/categories.js";
+import appendCategories from "./js/categories.js";
 
 
 initCarousel();
-initCategories();
+appendCategories();

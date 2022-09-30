@@ -1,0 +1,79 @@
+.item-dialog {
+    width: 100%;
+    margin: auto;
+    background-color: var(--primary-light);
+    border: none;
+    padding: var(--size-4);
+}
+
+.item-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.item-dialog-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-dialog-form h3 {
+    margin: var(--size-3) 0;
+}
+
+.item-dialog-form label {
+    font-size: var(--font-size-small);
+}
+
+.item-dialog-form input {
+    padding-left: var(--size-1);
+}
+
+.item-dialog-form input,
+.item-dialog-form select {
+    --field-font-size: var(--font-size-small);
+    --field-height: var(--size-4);
+    --field-spacing: var(--size-4);
+    --field-spacing-small: var(--size-1);
+    width: 100%;
+    height: var(--field-height);
+    margin-top: var(--field-spacing-small);
+    margin-bottom: var(--field-spacing);
+    font-size: var(--field-font-size);
+}
+
+.item-dialog-form button {
+    padding: var(--size-2);
+}
+
+.item-dialog-btn-container {
+    min-height: var(--size-4);
+    display: flex;
+    gap: var(--size-3);
+}
+
+.cancel-btn {
+    --button-bg-color: var(--color-delete);
+}
+
+.cancel-btn:hover {
+    --button-text-color-hover: var(--color-delete);
+    border: 1px solid var(--color-delete);
+}
+
+.item-dialog-form input[type=checkbox] {
+    --checkbox-size: calc(var(--size-3) * 1.4);
+    width: var(--checkbox-size);
+    margin-top: var(--size-1);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .item-dialog {
+        max-width: 1000px;
+    }
+
+    .item-dialog-form {
+        max-width: 50%;
+    }
+}

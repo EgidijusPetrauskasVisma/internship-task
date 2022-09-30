@@ -40,6 +40,7 @@
 
 .slide {
     position: relative;
+    max-height: calc(var(--size-4) * 15);
     min-width: var(--slide-width);
 }
 
