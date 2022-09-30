@@ -22,4 +22,10 @@
 
     /* Animation */
     --transition-duration: 0.3s;
+
+    /* Elements */
+    --button-bg-color: var(--primary-main);
+    --button-bg-color-hover: var(--white-main);
+    --button-text-color: var(--white-main);
+    --button-text-color-hover: var(--primary-main);
 }

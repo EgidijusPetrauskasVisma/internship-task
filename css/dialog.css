@@ -1,5 +1,5 @@
 .item-dialog {
-    width: 95%;
+    width: 100%;
     margin: auto;
     background-color: var(--primary-light);
     border: none;
@@ -53,11 +53,11 @@
 }
 
 .cancel-btn {
-    background-color: var(--color-delete);
+    --button-bg-color: var(--color-delete);
 }
 
 .cancel-btn:hover {
-    color: var(--color-delete);
+    --button-text-color-hover: var(--color-delete);
     border: 1px solid var(--color-delete);
 }
 
